@@ -33,6 +33,7 @@ const index = () => {
   const history = useSelector(
     (state) => state.currentAppointment.medicalHistory
   );
+  console.log("hisssss", history);
   // const docData = useSelector((state) => state.login.user);
 
   const hasSymptoms = data?.symptoms.length > 0 ? true : false;
@@ -57,6 +58,7 @@ const index = () => {
   ];
 
   const [text, setText] = useState("");
+  console.log("text", text);
 
   return (
     <Container>
@@ -136,7 +138,7 @@ const index = () => {
                 time={item.time}
                 symptoms={item.symptoms}
                 prescription={item.prescription}
-                id={item._id}
+                id={item.docName}
               />
             ))}
           </CardBox>

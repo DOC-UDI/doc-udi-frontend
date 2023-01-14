@@ -54,7 +54,7 @@ export const SmallContentHeader = styled.h2`
 export const SmallContent = styled.h4`
   text-align: left;
   font-size: 1.2rem;
-  font-weight: 600;
+  font-weight: 400;
   padding: 0;
   margin: 0;
   margin-bottom: 0.5rem;

@@ -28,12 +28,12 @@ const PatientDetail = () => {
     boxShadow: "none",
   };  
   const router = useRouter()
-  // console.log("query",router.query);
   const history = useSelector(
     (state) => state.currentAppointment.medicalHistory
   );
-  const data = history.find(his => his._id == router.query.key);
-  console.log("data",data);
+  // console.log("hisssssssss",history)
+  const data = history.find(his => his.docName == router.query.key);
+  console.log("dataaaaaaaaaaa",data);
   return (
     <Container>
       <Helmet />

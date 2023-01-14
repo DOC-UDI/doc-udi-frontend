@@ -1,2 +1,2 @@
 
-export const BASE_API_URL = `https://doc-udi-backend.herokuapp.com/api`;
+export const BASE_API_URL = `http://localhost:8002/api`;
